@@ -7,6 +7,7 @@
 #
 
 import ast
+import io
 import os
 import re
 from setuptools import setup
@@ -14,7 +15,7 @@ from setuptools import setup
 
 # Utility function to read the contents of the given file.
 def read_file(file_path):
-    with open(file_path, encoding='utf-8') as f:
+    with io.open(file_path, encoding='utf-8') as f:
         return f.read()
 
 
